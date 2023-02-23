@@ -2,10 +2,15 @@ import React, { useEffect, useState } from "react";
 
 const EffectExample = () => {
   const [number, setNumber] = useState(0);
+  const [name, setName] = useState("");
   const [user, setUser] = useState({
     name: "",
     selected: false,
   });
+  const handleAddUser = () => {
+    setUser((prev) => ({ ...prev, name: name }));
+  };
+  const handleSelectUser = () => {};
 
   useEffect(() => {
     document.title = "Effect";
@@ -27,14 +32,16 @@ const EffectExample = () => {
         <h2>User</h2>
         <input
           type="text"
-          value={user.name}
+          value={name}
           onChange={(e) => setUser(e.target.value)}
           placeholder="name"
           name="name"
         />
         <br />
         <br />
-        <button>Add user</button>
+        <button onClick={handleAddUser}>Add user</button>
+        <button onClick={handleOnSelect}>select</button>
+        {`{name: ${user.name}, selected:${user.selected.toString()}}`}
       </div>
     </div>
   );
