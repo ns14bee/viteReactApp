@@ -13,6 +13,10 @@ import BookList from "../../pages/Books";
 import StateExample from "../../pages/Practice/StateExample";
 import StateDemo from "../../pages/Practice/StateDemo";
 import EffectExample from "../../pages/Practice/EffectExample";
+import ReducerExample from "../../pages/Practice/ReducerExample";
+import Prefrences from "../../components/Auth/Prefrences";
+import Dashboard from "../../pages/Dashboard";
+import LoginPage from "../../pages/Login";
 
 const routes = createBrowserRouter([
   {
@@ -43,6 +47,10 @@ const routes = createBrowserRouter([
             path: "effect",
             element: <EffectExample />,
           },
+          {
+            path: "reducer",
+            element: <ReducerExample />,
+          },
         ],
       },
       {
@@ -70,6 +78,18 @@ const routes = createBrowserRouter([
       {
         path: "books",
         element: <BookList />,
+      },
+      {
+        path: "preferences",
+        element: <Prefrences />,
+      },
+      {
+        path: "dashboard",
+        element: <Dashboard />,
+      },
+      {
+        path: "login",
+        element: <LoginPage />,
       },
     ],
   },
