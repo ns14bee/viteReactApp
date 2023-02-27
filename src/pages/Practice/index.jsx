@@ -14,6 +14,9 @@ const index = () => {
         <NavLink to="/practice/reducer" className="text-light m-2">
           Reducer Example
         </NavLink>
+        <NavLink to="/practice/memo" className="text-light m-2">
+          Memo Example
+        </NavLink>
       </div>
       <Outlet />
     </div>

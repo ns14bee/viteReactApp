@@ -25,9 +25,21 @@
   align-items: center;
 }
 
+.form-body{
+  width: 100vw;
+}
 
 @media screen and (min-width: 368px) {
   .book {
     width: 500px;
+  }
+  .form-body{
+    width: 75vw;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .form-body{
+    width: 50vw;
   }
 }

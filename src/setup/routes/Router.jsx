@@ -14,6 +14,7 @@ import StateExample from "../../pages/Practice/StateExample";
 import StateDemo from "../../pages/Practice/StateDemo";
 import EffectExample from "../../pages/Practice/EffectExample";
 import ReducerExample from "../../pages/Practice/ReducerExample";
+import MemoExample from "../../pages/Practice/MemoExample";
 import Prefrences from "../../components/Auth/Prefrences";
 import Dashboard from "../../pages/Dashboard";
 import LoginPage from "../../pages/Login";
@@ -50,6 +51,10 @@ const routes = createBrowserRouter([
           {
             path: "reducer",
             element: <ReducerExample />,
+          },
+          {
+            path: "memo",
+            element: <MemoExample />,
           },
         ],
       },
