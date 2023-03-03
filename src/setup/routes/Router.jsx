@@ -18,6 +18,7 @@ import MemoExample from "../../pages/Practice/MemoExample";
 import Prefrences from "../../components/Auth/Prefrences";
 import Dashboard from "../../pages/Dashboard";
 import LoginPage from "../../pages/Login";
+import RazorPay from "../../pages/RazorPay";
 
 const routes = createBrowserRouter([
   {
@@ -95,6 +96,10 @@ const routes = createBrowserRouter([
       {
         path: "login",
         element: <LoginPage />,
+      },
+      {
+        path: "pay",
+        element: <RazorPay />,
       },
     ],
   },
