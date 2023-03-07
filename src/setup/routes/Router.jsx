@@ -19,6 +19,8 @@ import Prefrences from "../../components/Auth/Prefrences";
 import Dashboard from "../../pages/Dashboard";
 import LoginPage from "../../pages/Login";
 import RazorPay from "../../pages/RazorPay";
+import Profile from "../../pages/Profle";
+import Refund from "../../pages/Refund";
 
 const routes = createBrowserRouter([
   {
@@ -100,6 +102,14 @@ const routes = createBrowserRouter([
       {
         path: "pay",
         element: <RazorPay />,
+      },
+      {
+        path: "Refund",
+        element: <Refund />,
+      },
+      {
+        path: "profile",
+        element: <Profile />,
       },
     ],
   },
